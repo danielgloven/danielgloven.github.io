@@ -53,9 +53,17 @@ where
 group by
 order by ___ DESC
 limit;</code>
-Use some combination of that (of course there's lots more to it, but this covers a ton) and you can grab subsets of data. Boom. I've done SQL before, but the queries we wrote in today's class were more complicated that anything I have done in the past.</p>
+Use some combination of that (of course there's lots more to it, but this covers a ton) and you can grab subsets of data. Boom. I've done SQL before, but the queries we wrote in today's class were more complicated that anything I have done in the past. I had never used the <code>EXCEPT</code> or <code>EXTRACT</code> functions which are useful. Nested queries, and using the <code>WITH</code> statement helped with the assignments a lot. When doing <code>GROUP BY</code>'s, you need to aggregate any remaining terms that you are returning (Max, Count ,etc.).</p>
 <p>That seems to be how this class works. We start with a lecture in the morning where things make sense. We are then asked to take it as far as we can, and push what we JUST learned to it's limit. Like, "OK kids, you think you get SQL now? You sure? Great, take a whack at this assignment and see what you think". I love how hands on the class is, and how I can put in to practice everything I learn right away.</p>
-<h1>Day 4 - SQL-Python</h1>                </article>
+<p>We used Postgres to do all of our querying. But more on that tomorrow ...</p>
+<h1>Day 4 - SQL-Python and Pandas</h1>
+<p>More SQL/Postgres/Python today, followed by Pandas. I don't know much, but I sure know that I love Pandas DataFrames. They are so cozy and friendly.</p>
+<p>In Postgres we set up connections and cursors. We then executed statements using the cursor. We then learned how to commit these changes and close the cursor. The syntax for Postgres is fairly straightforward, and it is a cool way to "do SQL in Python".</p>
+<p><code>import pandas as pd</code> and I'm as happy as can be! Pandas is built on Numpy arrays, which are also super neat.</p>
+<p>Sorry, that was lame. Our pair assignment for today asked us to use Pandas to slice and dice our data. We typically read .csv's and .txt's in to Pandas, and then mess around with them. I used Pandas in my Python class, but learned quite a bit about <code>groupby</code>s, indices and aggregation.</p>
+<h1>Day 5 - Pandas - Seaborn</h1>
+<p>The morning was spent basically reenacting the movie "Moneyball" on our computers. We were given some MLB data with a whole bunch of baseball statistics, and asked to do what the Oakland A's did in 2001 to find players that are the best bang for their buck. To do this, we used Pandas to group and sort all kinds of statistics. We did some exploratory data analysis to find players with the lowest combined salaries and highest statas.</p>
+<p>The afternoon was spent learning how to plot in <code>matplotlib</code>. It made sense, and the hardest part was determining what to actually plot given some data. I guess that is the whole point of EDA. "Here's a bunch of data, plot it and see if you find anything interesting!"</p>                </article>
             </aside><!-- /#featured -->
                 <section id="content" class="body">
                     <h1>Other articles</h1>

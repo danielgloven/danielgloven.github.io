@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <title>Data Science @ Galvanize</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+
+        <!--[if IE]>
+            <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="/">Data Science @ Galvanize </a></h1>
+                <nav><ul>
+                    <li><a href="/pages/about-the-author.html">About the Author</a></li>
+                    <li><a href="/category/blog.html">Blog</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+
+            <aside id="featured" class="body">
+                <article>
+                    <h1 class="entry-title"><a href="/week1.html">Week 1 Summary</a></h1>
+<footer class="post-info">
+        <abbr class="published" title="2016-05-29T13:00:00-07:00">
+                Published: Sun 29 May 2016
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/daniel-gloven.html">Daniel Gloven</a>
+        </address>
+<p>In <a href="/category/blog.html">Blog</a>.</p>
+<p>tags: <a href="/tag/data-science.html">data science</a> <a href="/tag/galvanize.html">Galvanize</a> </p>
+</footer><!-- /.post-info --><h2>Week 1</h2>
+<p>Here we are, week 1.</p>
+<h1>Day 1 - Python Intro</h1>
+<p>Today started with introductions from the instructors and students. Our cohort is 21 strong and the largest Denver Data Science cohort to date. It was great to learn about everyone's backgrounds. Many have interesting backgrounds in engineering, science and programming. Everyone has one thing in common, though ... they're all super smart. I'm psyched to be part of such a great group.</p>
+<p>Right away, I realized that this class is an accelerated program. After introductions, we went straight in to a 2 hour assessment on Python, probability, numpy, pandas, SQL, and some general statistics. They wanted to get an idea of how much we had prepared for the class. I was able to complete all of the Python and SQL questions, but did not get to the math. Going in to the program, I know statistics is my weak point compared to programming and databases. I feel right at home on the command line, and less so on the math. I've taken plenty of difficult math in my life, but no pure statistics classes.</p>
+<p>The day finished up with a Python pair programming assignment. It was about writing efficient code, among other things. Some useful functions were <code>izip()</code> and <code>iteritems()</code>. Counters are also pretty cool, and I refreshed myself on some good string operations like <code>split()</code> and <code>strip()</code>. Searching a document with <code>re</code> is useful to find lines that have a certain format.</p>
+<p>All in all, day 1 started at 8:00am and finished at 5:30pm. Little did I know that this would the be shortest day...</p>
+<h1>Day 2 - OOP</h1>
+<p>With a new day comes a new operating system. The instructors mentioned it was very difficult to set up a Windows environment with some of the stack items we would be using this week. So today I was able to get an Ubuntu VirtualBox running with the help of Frank, one of our DSR's. I really like Linux so far. Having a Unix-based OS (instead of Windows) makes a bunch of things easier, like using Postgres. I will be switching between Windows and Linux throughout the class.</p>
+<p>We spent today reviewing a bunch of OOP topics, like functions and classes. This was all very familiar to me as I had just taken the 6-week "Intro to Python for Data Science" course that Galvanize offers. I was pretty good on OOP principles before today anyways (I've done some Java, .NET, etc.) so today wasn't bad at all.</p>
+<p>Our assignments involved created classes and functions. We weren't told to create code from scratch, however. Similar to a real job, we were given tons of existing code (classes, functions, etc.) and told to enhance the code by adding and editing functionality. Nothing like sorting through lots of existing code and being expected to "get it" and run with it! I've definitely had to do this in past jobs.</p>
+<h1>Day 3 - SQL</h1>
+<p>Today we basically crammed 3 months of SQL learning in to one day. It's probably the quickest part of the data science stack to learn, though. You have a given set of commands, and you can structure queries using them. Not too bad.</p>
+<p>Here's all you need to know:</p>
+<p><code>select
+from
+join
+on
+where
+group by
+order by ___ DESC
+limit;</code>
+Use some combination of that (of course there's lots more to it, but this covers a ton) and you can grab subsets of data. Boom. I've done SQL before, but the queries we wrote in today's class were more complicated that anything I have done in the past. I had never used the <code>EXCEPT</code> or <code>EXTRACT</code> functions which are useful. Nested queries, and using the <code>WITH</code> statement helped with the assignments a lot. When doing <code>GROUP BY</code>'s, you need to aggregate any remaining terms that you are returning (Max, Count ,etc.).</p>
+<p>That seems to be how this class works. We start with a lecture in the morning where things make sense. We are then asked to take it as far as we can, and push what we JUST learned to it's limit. Like, "OK kids, you think you get SQL now? You sure? Great, take a whack at this assignment and see what you think". I love how hands on the class is, and how I can put in to practice everything I learn right away.</p>
+<p>We used Postgres to do all of our querying. But more on that tomorrow ...</p>
+<h1>Day 4 - SQL-Python and Pandas</h1>
+<p>More SQL/Postgres/Python today, followed by Pandas. I don't know much, but I sure know that I love Pandas DataFrames. They are so cozy and friendly.</p>
+<p>In Postgres we set up connections and cursors. We then executed statements using the cursor. We then learned how to commit these changes and close the cursor. The syntax for Postgres is fairly straightforward, and it is a cool way to "do SQL in Python".</p>
+<p><code>import pandas as pd</code> and I'm as happy as can be! Pandas is built on Numpy arrays, which are also super neat.</p>
+<p>Sorry, that was lame. Our pair assignment for today asked us to use Pandas to slice and dice our data. We typically read .csv's and .txt's in to Pandas, and then mess around with them. I used Pandas in my Python class, but learned quite a bit about <code>groupby</code>s, indices and aggregation.</p>
+<h1>Day 5 - Pandas - Seaborn</h1>
+<p>The morning was spent basically reenacting the movie "Moneyball" on our computers. We were given some MLB data with a whole bunch of baseball statistics, and asked to do what the Oakland A's did in 2001 to find players that are the best bang for their buck. To do this, we used Pandas to group and sort all kinds of statistics. We did some exploratory data analysis to find players with the lowest combined salaries and highest statas.</p>
+<p>The afternoon was spent learning how to plot in <code>matplotlib</code>. It made sense, and the hardest part was determining what to actually plot given some data. I guess that is the whole point of EDA. "Here's a bunch of data, plot it and see if you find anything interesting!"</p>
+<h2>Conclusion</h2>
+<p>Week 1 was a success. I had the fundamentals for everything that we did, but the class really tested the absolute limits of what I understood. Knowing how things work is essential -- but this program requires you to PROVE that you truly get the material with through these difficult assignments. </p>                </article>
+            </aside><!-- /#featured -->
+                <section id="content" class="body">
+                    <h1>Other articles</h1>
+                    <hr />
+                    <ol id="posts-list" class="hfeed">
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/week2.html" rel="bookmark"
+                           title="Permalink to Week 2 Summary">Week 2 Summary</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2016-05-29T13:00:00-07:00">
+                Published: Sun 29 May 2016
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/daniel-gloven.html">Daniel Gloven</a>
+        </address>
+<p>In <a href="/category/blog.html">Blog</a>.</p>
+<p>tags: <a href="/tag/data-science.html">data science</a> <a href="/tag/galvanize.html">Galvanize</a> </p>
+</footer><!-- /.post-info -->                <h2>Week 2</h2>
+<p>Ok, I'm going to be honest. This is the week that I was the most scared about. I feel fairly comfortable with the programming and database stuff, but statistics less so. I've taken Linear Algebra, Multivariable Calculus, and Statistics in college, but haven't put it ...</p>
+                <a class="readmore" href="/week2.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/test-post.html" rel="bookmark"
+                           title="Permalink to First Blog Post">First Blog Post</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2016-05-13T15:00:00-07:00">
+                Published: Fri 13 May 2016
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/daniel-gloven.html">Daniel Gloven</a>
+        </address>
+<p>In <a href="/category/blog.html">Blog</a>.</p>
+<p>tags: <a href="/tag/pelican.html">pelican</a> <a href="/tag/data-science.html">data science</a> <a href="/tag/blogging.html">blogging</a> </p>
+</footer><!-- /.post-info -->                <p>Hi there, welcome! The purpose of this blog is to document my studies at the Galvanize Data Science Immerse in Denver, Colorado.</p>
+                <a class="readmore" href="/test-post.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+                </ol><!-- /#posts-list -->
+                </section><!-- /#content -->
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>blogroll</h2>
+                        <ul>
+                            <li><a href="http://getpelican.com/">Pelican</a></li>
+                            <li><a href="http://python.org/">Python.org</a></li>
+                            <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
+                            <li><a href="#">You can modify those links in your config file</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+
+                            <li><a href="#">You can add links in your config file</a></li>
+                            <li><a href="#">Another social link</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>
